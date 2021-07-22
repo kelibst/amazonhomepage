@@ -1,0 +1,16 @@
+.login {
+  &logo {
+    &img {
+      background-position: -5px -130px;
+      height: 31px;
+      width: 103px;
+
+      &::after{
+        background-size: 400px 750px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}
