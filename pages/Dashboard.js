@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     return (
         <div className="userpage">
-            <h1>User's First name: {currentUser.name} </h1>
+            <h1>User &apos; s First name: {currentUser.name} </h1>
         </div>
     )
 }

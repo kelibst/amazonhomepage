@@ -74,10 +74,10 @@ export default function Home() {
         <div className="home-content">
           <div className="login-content">
             <div className="logo-container">
-              <img src="/assets/amazon-icon.jpg" className="logo-img" alt="amazon logo" />
+              <Image src="/assets/amazon-icon.jpg" width="100%" height="100%" className="logo-img" alt="amazon logo" />
             </div>
             {errors?.error && <div className="errors-container"> {
-              errors?.errors?.map(err => <li className="err-danger" >{err}</li>)
+              errors?.errors?.map(err => <li className="err-danger" key={err}>{err}</li>)
             }</div>}
             {isSubmit && <div className="loading-container"> Loading... </div>}
             <div className={styles.loginform}>
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
                 <button className={styles.loginbtn} type="submit">Create your Amazon account</button>
 
-                <p className="login-privacy">By creating an account, you agree to Amazon's <Link href="#"><a >Conditions of Use</a></Link> and <Link href="#"><a>Privacy Notice</a></Link> .</p>
+                <p className="login-privacy">By creating an account, you agree to Amazon&apos;s <Link href="#"><a >Conditions of Use</a></Link> and <Link href="#"><a>Privacy Notice</a></Link> .</p>
               </form>
 
               <div className="loginformfooterr">
