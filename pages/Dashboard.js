@@ -1,6 +1,16 @@
+import { useEffect, useState } from "react";
+
 const Dashboard = () => {
-    let currentUser = localStorage.getItem("currentUser");
-    currentUser = JSON.parse(currentUser)
+    const [currentUser, setCurrentUser] = useState({});
+    useEffect(() => {
+        let curUser = localStorage.getItem("currentUser");
+        if (curUser?.length) {
+            curUser = JSON.parse(curUser)
+            setCurrentUser(curUser)
+        }
+    }, [])
+
+
     return (
         <div className="userpage">
             <h1>User's First name: {currentUser.name} </h1>
