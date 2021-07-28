@@ -9,27 +9,16 @@ export default function Home() {
       <Head>
         <title>Amazon Registration</title>
         <meta name="description" content="Amazon Sign Up page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <div className="home-content">
+          
+          <Image src="/assets/logo-amazon.png" alt="logo0mage" width="100" height="50"/>
           <Link href="/auth/Login"><a>Login</a></Link>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
