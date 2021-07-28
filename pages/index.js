@@ -74,7 +74,7 @@ export default function Home() {
         <div className="home-content">
           <div className="login-content">
             <div className="logo-container">
-              <Image src="/assets/amazon-icon.jpg" width="100%" height="100%" className="logo-img" alt="amazon logo" />
+              <Image src="/assets/amazon-icon.jpg" objectFit="contain" width={1000} height={1000} className="logo-img" alt="amazon logo" />
             </div>
             {errors?.error && <div className="errors-container"> {
               errors?.errors?.map(err => <li className="err-danger" key={err}>{err}</li>)
