@@ -1,4 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amazon Signup page Clone in Nextjs
+
+### Description
+This site was built as a part of a job test requirement. Please don't forget to start the repo if you like the project.
+
+### Features
+- Completely responsive
+- Use of NextJs best practices
+- Error handling features
+- LocalStorage to save user Data
+
+
+# Screenshot
+![Screenshot](./screenshot.gif)
+
+
+# Built With
+
+- HTML 
+- CSS
+- SCSS
+- NPM
+- NEXTJS
+- NODE
+- ESLINT
+- GITHUB ACTIONS
+- NETLIFY
+
 
 ## Getting Started
 
@@ -18,6 +45,23 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Live Site
+[Netlify Live Site](https://amason.netlify.app/)
+
+
+## Authors
+
+👤 **Kelly Booster**
+
+- Github: [@kelibst](https://github.com/kelibst)
+- Twitter: [@keli_booster](https://twitter.com/keli_booster)
+- Linkedin: [Kekeli (Jiresse) Dogbevi
+](https://www.linkedin.com/in/kekeli-dogbevi-jiresse/)
+
+
+# 🤝 Contributing
+Contributions, issues and feature requests are welcome!
+Feel free to check the issues page
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -27,10 +71,13 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Show your support
+Give a ⭐️ if you like this project!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# amazonhomepage
-A nextjs template of the amazon registration page.
+This project is [MIT](lic.url) l
+
+
+
+
+
