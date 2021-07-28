@@ -1,0 +1,26 @@
+.home-content {
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    &form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 380px;
+    }
+}
+.formh1{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
