@@ -36,10 +36,10 @@ input, select, textarea {
   outline: none;
   border: 1px solid black;
   padding: 7px;          
+}
 
-  &::focus, &::active {
-    border: 1px solid rgb(74, 74, 255);
-  }
+input:focus, input:active {
+  border: 1px solid rgb(163, 163, 255);
 }
 
 a, a:active, a:link, a:visited {
@@ -49,4 +49,23 @@ a, a:active, a:link, a:visited {
 .login-privacy {
   font-size: 13px;
   margin: 1rem 0 1.4rem 0;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+}
+.copy {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.logo-container {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+img {
+  max-width: 100%;
 }
