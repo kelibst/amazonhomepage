@@ -22,29 +22,34 @@ export default function Home() {
             <div className={styles.loginform}>
               <h1 className={styles.formh1}>Create account</h1>
               <form  onSubmit={registerUser}>
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="name">Your name</label>
                   <input id="name" type="text" autoComplete="name" required />
                 </div>
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="email">Email</label>
                   <input id="email" type="email" autoComplete="email" required />
                 </div>
 
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="password">Password</label>
                   <input id="password" type="password"  required />
                   <p className="password-info"><Image src="/assets/info-icon.png" alt="info icon" className="more info" height="15" width="10" /> Passwords must be at least 6 characters.</p>
                 </div>
 
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="password_confirmation">Password</label>
                   <input id="password_confirmation" type="password"  required />
                 </div>
-                <button type="submit">Create your Amazon account</button>
+                <button className={styles.loginbtn} type="submit">Create your Amazon account</button>
 
                 <p className="login-privacy">By creating an account, you agree to Amazon's <Link href="#"><a >Conditions of Use</a></Link> and <Link href="#"><a>Privacy Notice</a></Link> .</p>
               </form>
+              
+              <div className="loginformfooterr">
+                <div className={styles.logindivider}></div>
+                <p className="login-signin">Aready have an account? <Link href="#signin"><a>Sign In</a></Link></p>
+              </div>
             </div>
           </div>
         </div>

@@ -18,9 +18,40 @@
 .formh1{
     font-size: 28px;
     font-weight: 400;
+    margin-top: 20px
 }
 
-.form-control {
+.formcontrol {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    padding-bottom: 14px;
+}
+.loginbtn {
+    background: linear-gradient(to bottom,#3298dc,#18b);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+
+.logindivider {
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    height: 44px;
+    margin-bottom: -18px;
+    z-index: 0;
+    zoom: 1;
+
+    &:after {
+        display: block;
+    width: 100%;
+    height: 44px;
+    background-color: transparent;
+    background: -webkit-linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+    z-index: 1;
+    content: "";
+    }
 }
