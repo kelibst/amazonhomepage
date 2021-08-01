@@ -32,13 +32,11 @@ export default function Home() {
     if (usersData?.length) {
       usersData = JSON.parse(usersData)
       usersData.push(userData)
-      debugger
     } else {
       usersData = []
       usersData.push(userData)
-      debugger
+      localStorage.setItem("currentUser", JSON.stringify(userData))
     }
-
   }
 
   const registerUser = (e) => {
@@ -48,14 +46,12 @@ export default function Home() {
 
     if (password === password_confirmation) {
       setUser(userData)
-
       router.push('/Dashboard')
     } else {
       setErrors({
         ...errors,
         error: true,
         errors: [
-          ...errors,
           "Password and Password confirmation are not the same."
         ]
       })
@@ -63,10 +59,9 @@ export default function Home() {
 
   }
 
-  // useEffect(() => {
-
-  //   setUser(userData)
-  // }, [isSubmit, userData, errors])
+  useEffect(() => {
+    isSubmit && errors?.error && setisSubmit(false)
+  }, [isSubmit, userData, errors])
   return (
     <div className={styles.container}>
       <Head>
@@ -82,8 +77,9 @@ export default function Home() {
               <img src="/assets/amazon-icon.jpg" className="logo-img" alt="amazon logo" />
             </div>
             {errors?.error && <div className="errors-container"> {
-              errors?.errors?.map(err => <li>{err}</li>)
+              errors?.errors?.map(err => <li className="err-danger" >{err}</li>)
             }</div>}
+            {isSubmit && <div className="loading-container"> Loading... </div>}
             <div className={styles.loginform}>
               <h1 className={styles.formh1}>Create account</h1>
               <form onSubmit={registerUser}>

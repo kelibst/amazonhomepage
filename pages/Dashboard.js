@@ -1,8 +1,10 @@
 const Dashboard = () => {
-    const currentUser = localStorage.getItem("currentuser");
-    
+    let currentUser = localStorage.getItem("currentUser");
+    currentUser = JSON.parse(currentUser)
     return (
-        <div className="userpage">Hello World</div>
+        <div className="userpage">
+            <h1>User's First name: {currentUser.name} </h1>
+        </div>
     )
 }
 

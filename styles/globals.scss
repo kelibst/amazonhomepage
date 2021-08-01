@@ -76,3 +76,17 @@ li {
 button {
   cursor: pointer;
 }
+.err-danger {
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 16px;
+  position: relative;
+  top: -30px
+}
+.loading-container {
+  color: limegreen;
+  text-align: center;
+  position: relative;
+  top: -20;
+}
